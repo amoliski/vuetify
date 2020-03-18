@@ -606,6 +606,8 @@ export default baseMixins.extend<options>().extend({
         this.isFocused = true
         this.$emit('focus')
       }
+
+      this.$emit('click', e)
     },
     onEscDown (e: Event) {
       e.preventDefault()
